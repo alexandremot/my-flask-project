@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>My Flask Project</h2>
+
+{% if message %}
+	<p>{{message | safe}}</p>
+{% endif %}
+
+<form action="/submit" method="POST">
+  Nome:<br>
+  <input type="text" name="user_name">
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>
